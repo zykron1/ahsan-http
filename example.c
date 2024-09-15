@@ -1,6 +1,6 @@
 #include "ahsan_http.h"
 HTTPResponse hello(HTTPRequest req) {
-	HTTPResponse response = {200, {}, "Cool"};
+	HTTPResponse response = {200, {"Content-Type: text/html"}, "<h1>Hello World</h1>"};
 	return response;
 }
 
